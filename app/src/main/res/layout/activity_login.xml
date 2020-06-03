@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:background="@drawable/login"
+        app:srcCompat="@drawable/ohno"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:fontFamily="sans-serif-light"
+        android:text="USUÁRIO"
+        android:textColor="@color/login"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15px"
+        android:background="@drawable/arrendondamento"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="email@email.com.br"
+        android:inputType="textEmailAddress"
+        android:text="admin@ohno.com"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="SENHA"
+        android:textColor="@color/login"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/senhaLogin"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:background="@drawable/arrendondamento"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="*******"
+            android:inputType="textPassword"
+            android:text="admin"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/showPassword"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/closed_eye" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_buttons"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Login"
+        android:textColor="#BE000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
